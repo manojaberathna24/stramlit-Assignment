@@ -166,7 +166,7 @@ elif menu == "Model Prediction":
     if st.button("Predict"):
         with st.spinner("Calculating prediction..."):
             try:
-                time.sleep(1)  # Simulate processing time
+                time.sleep(1)  
                 input_df = pd.DataFrame([input_data])
                 prediction = model.predict(input_df)[0]
                 st.success(f" Predicted House Price: ${prediction * 1000:,.2f}")
@@ -180,7 +180,7 @@ elif menu == "Model Performance":
     
     # Convert to classification by binning prices
     df['PRICE_CATEGORY'] = pd.cut(df['MEDV'],
-                                 bins=[0, 15, 25, 50],  # Customize these bins
+                                 bins=[0, 15, 25, 50],  
                                  labels=['Low', 'Medium', 'High'])
     
     X = df.drop(columns=['MEDV', 'PRICE_CATEGORY'])
