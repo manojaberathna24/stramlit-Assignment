@@ -56,3 +56,7 @@ The project includes a Streamlit application for users to interact with the mode
 - Python 3.8+
 - `pandas`, `numpy`, `scikit-learn`, `joblib`, `streamlit`, `matplotlib`, `seaborn`, `plotly`
 
+- proof
+
+- https://appapp-wstbrj2dcsvyovkc5qnkxe.streamlit.app/
+
